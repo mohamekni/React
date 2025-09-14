@@ -1,10 +1,20 @@
 export default function Card(props) {
-return <div style={{width:"250px"}}>
-        <img src={props.img} style={{width:"250px", height:"300px"}} alt="logo"/>
-        <div style={{display:"flex",alignItems:"center", justifyContent:"space-between"}}>
-            <h1 style={{}}>{props.title}</h1>
-            <h3>{props.review}</h3>
+return <div>
+        <div style={{
+                    backgroundImage:`url(${props.img})`, 
+                    width:"300px", 
+                    height:"300px", 
+                    backgroundRepeat:"no-repeat",
+                    backgroundSize:"cover",
+                    backgroundPosition:"center",
+                    borderRadius:'10px' 
+                    }}>
         </div>
-        <h3 style={{marginTop:"0"}}>{props.price}$ night</h3>
+
+        <div style={{display:"flex",alignItems:"center", justifyContent:"space-between", marginBottom:"0"}}>
+            <h1 style={{}}>{props.title}</h1>
+            <h3 style={{fontWeight:"normal"}}><i className="fa-solid fa-star" style={{color:"gold"}}></i>{props.review}</h3>
+        </div>
+        <h3>{props.price}$ <span style={{fontWeight:"normal"}}>night</span></h3>
     </div>
 }
