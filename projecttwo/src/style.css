@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+    margin : 0
+}
+
+.signup{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+form{
+    width: 40%;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding : 20px
+}
+
+input{
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: 2px solid white ;
+    border-radius: 10px;
+    box-shadow : 0px  0px 1px 1px rgba(0 , 0 , 0 , 0.1);
+    transition: 0.3s;
+    margin-bottom: 8px;
+}
+input:focus{
+    border : 2px solid #86b7fe;
+}
+input::placeholder{
+    color: rgba(0,0,0,0,3);
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.register button{
+    border : none ;
+    outline : none ;
+    background: #86b7fe;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.register button:hover{
+    background-color: white;
+    border: 2px solid #86b7fe;
+    color: #86b7fe;
+}
