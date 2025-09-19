@@ -17,7 +17,7 @@ body{
 
 
 form{
-    width: 40%;
+    width: 400px;
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
     padding : 20px
 }
